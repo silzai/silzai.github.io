@@ -27,6 +27,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  silzai
 permalink: /:slug.html
+
+# Build settings
+remote_theme: riggraz/no-style-please
+
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
   back_home_text: "back" # customize text for homepage link in post layout
@@ -34,10 +38,21 @@ theme_config:
   show_description: true # show blog description in home page
   lowercase_titles: true # show titles in lowercase in lists
 
-# Build settings
-theme: no-style-please
+sass:
+  style: compressed
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jektex
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.

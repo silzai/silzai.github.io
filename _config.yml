@@ -24,7 +24,7 @@ email: basilsaeed101 <... at ...> gmail dotcom
 description: >- # this means to ignore newlines until "baseurl:"
   welcome :D I'm Basil. I talk about things that I somewhat know but am fully interested in, so don't consider them facts :) I enjoy talking about tech and nation-building (aka influencing mindsets and starting businesses/startups, especially to elevate people in poverty).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://silzai.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  silzai
 permalink: /:slug.html
 
